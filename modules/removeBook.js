@@ -1,6 +1,6 @@
-removeBook(index) {
-    this.books.splice(index, 1);
-    localStorage.setItem('books', JSON.stringify(this.books));
-  }
+const removeBook = (index, bookList) => {
+  this.books.splice(index, 1);
+  localStorage.setItem('books', JSON.stringify(this.books));
+};
 
-    export default removeBook;
+export default removeBook;

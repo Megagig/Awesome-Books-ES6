@@ -43,8 +43,8 @@ class BookList {
       const author = document.getElementById('author').value;
       if (title && author !== '') {
         const book = { title, author };
-        this.addBook(book);
-        this.renderBookList();
+        addBook(book, this.books);
+        renderBookList(this.books);
 
         // Reset the form inputs
         document.getElementById('title').value = '';
@@ -60,7 +60,7 @@ class BookList {
 
     // Render list of books on page load
     window.addEventListener('load', () => {
-      this.renderBookList();
+      renderBookList(this.books);
     });
   }
 
