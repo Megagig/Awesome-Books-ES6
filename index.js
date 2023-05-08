@@ -1,6 +1,5 @@
 import addBook from './modules/addBook.js';
 import renderBookList from './modules/renderBookList.js';
-//import removeBook from './modules/removeBook.js';
 import { DateTime } from './modules/luxon.js';
 
 class BookList {
@@ -15,7 +14,7 @@ class BookList {
     };
   }
 
-  init() {
+  init = () => {
     // Add event listeners to the navigation links
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach((link) => {
@@ -62,22 +61,22 @@ class BookList {
     window.addEventListener('load', () => {
       renderBookList(this.books);
     });
-  }
+  };
 
-  showError(type, message) {
+  showError = (type, message) => {
     const errorElement = this.errorElements[type];
     errorElement.textContent = message;
     errorElement.style.display = 'block';
     document.getElementById(type).style.marginBottom = '1rem';
     this.resetInputError();
-  }
+  };
 
-  resetInputError() {
+  resetInputError = () => {
     setTimeout(() => {
       this.errorElements.title.style.display = 'none';
       this.errorElements.author.style.display = 'none';
     }, 2000);
-  }
+  };
 
   showSection = (sectionId) => {
     // Hide all content sections
