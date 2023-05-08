@@ -1,8 +1,9 @@
-const renderBookList = (books, removeBook) => {
+import removeBook from './removeBook.js';
+
+const renderBookList = (books) => {
   const bookList = document.getElementById('book-list');
   bookList.innerHTML = '';
 
-  // Header for list books page
   const h1 = document.createElement('h1');
   h1.textContent = 'All Awesome Books';
   bookList.appendChild(h1);
@@ -13,8 +14,8 @@ const renderBookList = (books, removeBook) => {
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
     removeBtn.addEventListener('click', () => {
-      removeBook(index);
-      renderBookList(books, removeBook);
+      removeBook(index, JSON.parse(localStorage.getItem('books')));
+      renderBookList(JSON.parse(localStorage.getItem('books')));
     });
     li.appendChild(removeBtn);
     bookList.appendChild(li);

@@ -1,6 +1,6 @@
 import addBook from './modules/addBook.js';
 import renderBookList from './modules/renderBookList.js';
-import removeBook from './modules/removeBook.js';
+//import removeBook from './modules/removeBook.js';
 import { DateTime } from './modules/luxon.js';
 
 class BookList {
