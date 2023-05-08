@@ -24,7 +24,7 @@
 
 # 📖 [Awesome Books ES6] <a name="about-project"></a>
 
-**[Awesome Books]** is a basic website that allows users to add/remove books to/from a list of books. This is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript ES6 modules.
+**[Awesome Books ES6]** is a basic website that allows users to add/remove books to/from a list of books. This is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I will learn how to manage data using JavaScript ES6 modules.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://megagig.github.io/Awesome-books/)
+- [Live Demo Link](https://megagig.github.io/Awesome-Books-ES6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
